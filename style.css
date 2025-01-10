@@ -107,3 +107,34 @@ footer {
     width: 20px;
     padding-left: 0px;
 }
+.images{
+    display: flex;
+    padding-right: 50px;
+    align-items: center;
+    padding-left: 20px;
+}
+.i1 p{
+    font-size: larger;
+    color: #d63384;
+    font-weight: bolder;
+}
+.i2 p{
+    font-size: larger;
+    color: #d63384;
+    font-weight: bolder;
+}
+.i3 p{
+    font-size: larger;
+    color: #d63384;
+    font-weight: bolder;
+}
+.i4 p{
+    font-size: larger;
+    color: #d63384;
+    font-weight: bolder;
+}
+.i5 p{
+    font-size: larger;
+    color: #d63384;
+    font-weight: bolder;
+}

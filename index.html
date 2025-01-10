@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SBI Life</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -43,11 +44,48 @@
             <h2>Life Insurance</h2>
             <p>Live your best life today, your tomorrow is secured with us</p>
         </section>
-        <a href="index1.html"><img src="ai-removebg-preview.png"></a>
         </main>
-
+        <div class="chat-container" id="chat-container">
+            <div class="chat-header">
+                <span><img src="ai.gif" style="height: 150px;"></span>
+                <button id="minimize-btn" class="minimize-btn">-</button>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="chat-message-user-message">
+                    <p>Hello! How can I assist you today?</p>
+                </div>
+                <!-- Chat messages will be dynamically inserted here -->
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="user-input" placeholder="Type a message..." />
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+        <div class="images">
+            <div class="i1"><button><img src="i1.png"><p>Child Education</p></button></div>
+            <div class="i2"><button><img src="i2.jpg"><p>Care-Free Retirement</p></button></div>
+            <div class="i3"><button><img src="i3.jpg"><p>Financial Security</p></button></div>
+            <div class="i4"><button><img src="i4.jpg"><p>Family's Protection</p></button></div>
+            <div class="i5"><button><img src="i5.jpg"><p>Wealth Creation</p></button></div>                       
+        </div>
+        <h2>Explore With Us – Life Insurance Plans and Guides</h2>
+        <div class="images">
+            <div class="i6"><button><img src="i6.jpg"><p style="color: #d63384;">Insurance Protection Plan</p><p>
+                Ensure your family’s financial security and happiness</p><p style="color: blue;">
+                View Plans</p></button></div>
+            <div class="i7"><button><img src="i7.jpg"><p style="color: #d63384;">Retirement Benefits</p><p>
+                Plan today to enjoy your golden years, worry-free</p><p style="color: blue;">
+                View Plans</p></button></div>
+            <div class="i8"><button><img src="i8.jpg"><p style="color: #d63384;">Child's Future Planning</p><p>
+                Give wings to your child’s dreams by saving today</p><p style="color: blue;">
+                View Plans</p></button></div>
+            <!-- <div class="i9"><button><img src="i9.png"><p>Family's Protection</p></button></div>
+            <div class="i10"><button><img src="i10.png"><p>Wealth Creation</p></button></div>                       
+        </div> -->
+        
     <footer>
-        <p>SBI LIFE INSURANCE COMPANY LTD. | IRDAI REGD. NO. 111</p>
+    </div>    <p>SBI LIFE INSURANCE COMPANY LTD. | IRDAI REGD. NO. 111</p>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>
