@@ -33,11 +33,9 @@ document.getElementById('minimize-btn').addEventListener('click', function() {
 //     }
 // });
 document.getElementById("send-btn").addEventListener("click", () => { const userInput = document.getElementById("user-input").value;
-
       displayMessage(userInput, "user");
       document.getElementById("user-input").value = "";
       sendToServer(userInput);
-    
   });
 
   function displayMessage(message, sender) {
@@ -48,7 +46,7 @@ document.getElementById("send-btn").addEventListener("click", () => { const user
   }
   
   async function sendToServer(message) {
-    const response = await fetch("/chatbot", {
+    const response = await fetch("https://ai-bot-ten-fawn.vercel.app/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message })
