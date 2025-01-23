@@ -41,7 +41,9 @@ document.getElementById("send-btn").addEventListener("click", () => { const user
   function displayMessage(message, sender) {
     const chatBox = document.getElementById("chat-box");
     const message2 = document.createElement("div");
-    message2.classList.add(sender); message2.textContent = message; chatBox.appendChild(message2);
+    message2.classList.add(sender); 
+    message2.textContent = message; 
+    chatBox.appendChild(message2);
     chatBox.scrollTop = chatBox.scrollHeight; 
   }
   

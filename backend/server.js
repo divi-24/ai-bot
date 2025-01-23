@@ -118,7 +118,7 @@ app.post("/chatbot", async (req, res) => {
           "Understood! Now, let me evaluate the best policies for you. Please wait a moment.";
         userData.step = "evaluate";
         const openaiResponse = await openai.createChatCompletion({
-          model: "gpt-3.5-turbo",
+          model: "gpt-4o-mini",
           messages: [
             {
               role: "system",
@@ -161,5 +161,5 @@ app.post("/chatbot", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  console.log(`Server is running on ${port}`);
 });
