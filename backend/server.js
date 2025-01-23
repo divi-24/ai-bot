@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
@@ -8,8 +9,9 @@ const port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "public")));
 const configuration = new Configuration({
-  apiKey: "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", 
-});
+    apiKey: process.env.openapikey,
+  });
+  
 const openai = new OpenAIApi(configuration);
 const userData = {};
 app.post("/chatbot", async (req, res) => {
