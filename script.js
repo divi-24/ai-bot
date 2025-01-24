@@ -48,7 +48,7 @@ document.getElementById("send-btn").addEventListener("click", () => { const user
   }
   
   async function sendToServer(message) {
-    const response = await fetch("https://ai-bot-ten-fawn.vercel.app/", {
+    const response = await fetch("https://ai-bot-deepak-guptas-projects-1a8eb72c.vercel.app/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message })
