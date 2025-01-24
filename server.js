@@ -14,7 +14,7 @@ const configuration = new Configuration({
   
 const openai = new OpenAIApi(configuration);
 const userData = {};
-app.post("/chatbot", async (req, res) => {
+app.post("/", async (req, res) => {
   const userMessage = req.body.message.toLowerCase();
   let reply = "";
 
@@ -71,7 +71,7 @@ app.post("/chatbot", async (req, res) => {
         break;
 
       case /monthly|quarterly|half-yearly|annually/.test(userMessage) && userData.step === "paymentFrequency":
-        userData.paymentFrequency = userMessage.charAt(0).toUpperCase() + userMessage.slice(1); // Capitalize the first letter
+        userData.paymentFrequency = userMessage.charAt(0).toUpperCase() + userMessage.slice(1); 
         reply =
           "Thank you! Do you have any existing life insurance policies or health coverage? (Yes/No)";
         userData.step = "existingPolicy";
