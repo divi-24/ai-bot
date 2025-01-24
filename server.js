@@ -118,7 +118,7 @@ app.post("/chatbot", async (req, res) => {
           "Understood! Now, let me evaluate the best policies for you. Please wait a moment.";
         userData.step = "evaluate";
         const openaiResponse = await openai.createChatCompletion({
-          model: "gpt-4o-mini",
+          model: "gpt-3.5-turbo",
           messages: [
             {
               role: "system",
