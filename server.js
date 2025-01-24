@@ -163,3 +163,5 @@ app.post("/chatbot", async (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on ${port}`);
 });
+//serverless vercel 
+module.exports = app;
